@@ -3,191 +3,265 @@
 <head>
     <title>Image Gallery</title>
 	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday">
+    <meta name="description" content="Happy Birthday">
+    <meta property="og:image" content="./assets/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="./css/wishes.css">
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet/less" href="cake.less">
+    <link rel="stylesheet/less" href="cake.less">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
 <body>
+    <!-- <audio class="song" controls loop>
+        <source src="./assets/hbd.mp3"></source>
+       Your browser isn't invited for super fun audio time.
+    </audio> -->
     <div class="wrapper">
-        <h1>We keep this dove in a photograph</h1>
+        <div class="bar">
+            <span class="bar_content">
+              <p class="glow">We keep this dove in a photograph ...</p>
+            </span>
+          </div>
+        <!-- <p onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')">Hover Over Me To Play</p> -->
+
+
+
+
         <div class="cols">
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="col"  id="c1" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a1')" 
+            onmouseout="StopSound('a1')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background: #fc5c65">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/one_year_old.png" alt="baby-pic" class="card-front-img">
+                            <br>
+                            <p class="cardtxt">the one year old you</p>
                         </div>
                     </div>
-                    <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
+                    <div class="back" style="background-image: url('./assets/childpic.jpg')">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+            <div class="col" id="c2" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a2')" 
+            onmouseout="StopSound('a2')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background:#26de81">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/six_year_old.png" alt="baby-pic" class="card-front-img">
+                            <p class="cardtxt">the six year old you</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+            <div class="col"  id="c3" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a1')" 
+            onmouseout="StopSound('a1')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background: #fed330">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/one_year_old.png" alt="baby-pic" class="card-front-img">
+                            <br>
+                            <p class="cardtxt">the one year old you</p>
+                        </div>
+                    </div>
+                    <div class="back" style="background-image: url('./assets/bg01.gif')">
+                        <div class="inner">
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="c4" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a2')" 
+            onmouseout="StopSound('a2')">
+                <div class="container">
+                    <div class="front" style="background:#a55eea">
+                        <div class="inner">
+                            <img src="./assets/six_year_old.png" alt="baby-pic" class="card-front-img">
+                            <p class="cardtxt">the six year old you</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+            <div class="col"  id="c5" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a1')" 
+            onmouseout="StopSound('a1')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background: #fa8231">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/one_year_old.png" alt="baby-pic" class="card-front-img">
+                            <br>
+                            <p class="cardtxt">the one year old you</p>
+                        </div>
+                    </div>
+                    <div class="back" style="background-image: url('./assets/bg01.gif')">
+                        <div class="inner">
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="c6" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a2')" 
+            onmouseout="StopSound('a2')">
+                <div class="container">
+                    <div class="front" style="background: #007bff">
+                        <div class="inner">
+                            <img src="./assets/six_year_old.png" alt="baby-pic" class="card-front-img">
+                            <p class="cardtxt">the six year old you</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+            <div class="col"  id="c7" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a1')" 
+            onmouseout="StopSound('a1')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background: #0be881">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/one_year_old.png" alt="baby-pic" class="card-front-img">
+                            <br>
+                            <p class="cardtxt">the one year old you</p>
+                        </div>
+                    </div>
+                    <div class="back" style="background-image: url('./assets/bg01.gif')">
+                        <div class="inner">
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="c8" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a2')" 
+            onmouseout="StopSound('a2')">
+                <div class="container">
+                    <div class="front" style="background:#ef5777">
+                        <div class="inner">
+                            <img src="./assets/six_year_old.png" alt="baby-pic" class="card-front-img">
+                            <p class="cardtxt">the six year old you</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+            <div class="col"  id="c9" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a1')" 
+            onmouseout="StopSound('a1')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background: #fed330">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/one_year_old.png" alt="baby-pic" class="card-front-img">
+                            <br>
+                            <p class="cardtxt">the one year old you</p>
+                        </div>
+                    </div>
+                    <div class="back" style="background-image: url('./assets/bg01.gif')">
+                        <div class="inner">
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="c10" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a2')" 
+            onmouseout="StopSound('a2')">
+                <div class="container">
+                    <div class="front" style="background:#007bff">
+                        <div class="inner">
+                            <img src="./assets/six_year_old.png" alt="baby-pic" class="card-front-img">
+                            <p class="cardtxt">the six year old you</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+
+            <div class="col"  id="c11" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a1')" 
+            onmouseout="StopSound('a1')">
                 <div class="container">
-                    <div class="front" >
+                    <div class="front" style="background: #fa8231">
                         <div class="inner">
-                            <p>the two year old you</p>
+                            <img src="./assets/one_year_old.png" alt="baby-pic" class="card-front-img">
+                            <br>
+                            <p class="cardtxt">the one year old you</p>
+                        </div>
+                    </div>
+                    <div class="back" style="background-image: url('./assets/bg01.gif')">
+                        <div class="inner">
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="c12" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a2')" 
+            onmouseout="StopSound('a2')">
+                <div class="container">
+                    <div class="front" style="background: #a55eea">
+                        <div class="inner">
+                            <img src="./assets/six_year_old.png" alt="baby-pic" class="card-front-img">
+                            <p class="cardtxt">the six year old you</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
                         <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" >
-                        <div class="inner">
-                            <p>the two year old you</p>
-                        </div>
-                    </div>
-                    <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" >
-                        <div class="inner">
-                            <p>the two year old you</p>
-                        </div>
-                    </div>
-                    <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" >
-                        <div class="inner">
-                            <p>the two year old you</p>
-                        </div>
-                    </div>
-                    <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" >
-                        <div class="inner">
-                            <p>the two year old you</p>
-                        </div>
-                    </div>
-                    <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" >
-                        <div class="inner">
-                            <p>the two year old you</p>
-                        </div>
-                    </div>
-                    <div class="back" style="background-image: url(https://unsplash.it/500/500/)">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+    
         </div>
     </div>
+    <!-- all audio  -->
+    <audio id='a1' src='assets/hbd.mp3'/>
+    <audio id='a2' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg'/>
 </body>
+<script>
+    function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+</script>
 </html>
