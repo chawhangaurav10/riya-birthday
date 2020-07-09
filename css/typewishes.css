@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Lobster&display=swap');
+
+/* .clr{
+    background-color: green;
+}
+
+.clr2{
+    background-color: orange;
+} */
+
+
+
+.bar {
+  height: auto;
+  width: 100%;
+  padding-top: 10px; 
+  padding-bottom: 0px;
+}
+
+.vh{
+    height: 75vh;
+}
+
+.toptxt {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.midtxt{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.endtxt{
+    margin-bottom: 40px;
+}
+
+  body{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+  }
+
+
+
+
+  
+
