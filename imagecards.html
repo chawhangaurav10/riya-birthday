@@ -5,20 +5,26 @@
 	<meta charset="UTF-8" />
     <meta name="description" content="Happy Birthday">
     <!-- <meta property="og:image" content="./assets/favicon.ico" /> -->
-    <link rel="icon" type="image/png" href="./assets/teen.png" />
+    <link rel="icon" type="image/png" href="./assets/imgcrdicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     
 	<link rel="stylesheet" type="text/css" href="./css/imagecards.css">
     <link rel="stylesheet/less" href="cake.less">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script> -->
+    
+    
 </head>
 <body>
     <div class="wrapper">
         <div class="bar">
             <span class="bar_content">
-              <!-- <a href="#" onclick="playsong()"></a></a> -->
-              <p class="glow">We keep this Love in a Photograph ...</p>
+              <p class="glow"> 
+                  <span onclick="PlaySound('photograph')" >
+                      <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                     </svg>
+                  </span>  We keep this Love in a Photograph ...</p>
             </span>
           </div>
         <div class="cols">
@@ -404,12 +410,12 @@
                 <div class="container">
                     <div class="front" style="background:#007bff">
                         <div class="inner">
-                            <img src="./assets/pics/pic-16.png" alt="pic" class="card-front-img">
+                            <img src="./assets/pics/pic-22.png" alt="pic" class="card-front-img">
                             <br>
-                            <p class="cardtxt">This one's for you Princu, Happy 22!</p>
+                            <p class="cardtxt">This one's for you Princu, Happy 22! <br>*****</p>
                         </div>
                     </div>
-                    <div class="back" style="background-image: url('./assets/pics/pic-16.jpg')">
+                    <div class="back" style="background-image: url('./assets/pics/pic-22.gif')">
                         <div class="inner">
                             <p >22</p>
                         </div>
@@ -417,8 +423,13 @@
                 </div>
             </div>
         </div>
+        <div><center>
+            <a href="./typewishes.html"><button id="clicker" class="btn btn-primary" onclick="">Now Click Here!</button></a>
+        </center>
+        </div>
     </div>
     <!-- all audio  -->
+    <audio id='photograph' src='assets/Ed-Sheeran-Photograph.mp3'/>
     <audio id='a1' src='assets/Card-flip-sound-effect.mp3'/>
     <audio id='a2' src='assets/Card-flip-sound-effect.mp3'/>
     <audio id='a3' src='assets/Card-flip-sound-effect.mp3'/>
@@ -444,13 +455,12 @@
 
 </body>
 <script>
-    function playsong(){
 
-    }
     function PlaySound(soundobj) {
-    var thissound=document.getElementById(soundobj);
+        var thissound=document.getElementById(soundobj);
     thissound.play();
 }
+
 
 function StopSound(soundobj) {
     var thissound=document.getElementById(soundobj);

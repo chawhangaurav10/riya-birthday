@@ -21,9 +21,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #FC427B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left,#FEA47F, #FC427B);   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left,#FEA47F, #FC427B);   /* background-color: rgba(0,0,0,0.3); */
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* :not(:required) hides these rules from IE9 and below */
