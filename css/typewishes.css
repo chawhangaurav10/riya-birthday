@@ -24,15 +24,15 @@
 .toptxt {
   color: white;
   font-family: 'Lobster', cursive;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .midtxt{
     color: white;
     font-family: 'Lobster', cursive;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.8rem;
+    text-align: left;
 }
 
 .endtxt{
