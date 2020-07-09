@@ -17,6 +17,7 @@
     <div class="wrapper">
         <div class="bar">
             <span class="bar_content">
+              <!-- <a href="#" onclick="playsong()"></a></a> -->
               <p class="glow">We keep this Love in a Photograph ...</p>
             </span>
           </div>
@@ -60,7 +61,7 @@
             <div class="col"  id="c3" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a3')" 
             onmouseout="StopSound('a3')">
                 <div class="container">
-                    <div class="front" style="background: #fc5c65">
+                    <div class="front" style="background: #ef5777">
                         <div class="inner">
                             <img src="./assets/pics/pic-2.5.png" alt="pic" class="card-front-img">
                             <br>
@@ -154,7 +155,7 @@
                         <div class="inner">
                             <img src="./assets/pics/pic-6.png" alt="pic" class="card-front-img">
                             <br>
-                            <p class="cardtxt">And just how the time flies</p>
+                            <p class="cardtxt">And just how the time flies**</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url('./assets/pics/pic-6.gif')">
@@ -280,7 +281,7 @@
                         <div class="inner">
                             <img src="./assets/pics/pic-16.png" alt="pic" class="card-front-img">
                             <br>
-                            <p class="cardtxt">Your favourite pose, honestly!</p>
+                            <p class="cardtxt">Your favourite pose, honestly!**</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url('./assets/pics/pic-16.gif')">
@@ -369,7 +370,7 @@
                         <div class="inner">
                             <img src="./assets/pics/pic-19.png" alt="pic" class="card-front-img">
                             <br>
-                            <p class="cardtxt">And journey of life is incomplete without a true friend!</p>
+                            <p class="cardtxt">And journey of life is incomplete without a true friend!**</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url('./assets/pics/pic-19.gif')">
@@ -387,7 +388,7 @@
                         <div class="inner">
                             <img src="./assets/pics/pic-18.png" alt="pic" class="card-front-img">
                             <br>
-                            <p class="cardtxt">And to the one who's always been there for you</p>
+                            <p class="cardtxt">And to the one who's always been there for you**</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url('./assets/pics/pic-18.gif')">
@@ -418,11 +419,34 @@
         </div>
     </div>
     <!-- all audio  -->
-    <audio id='a1' src='assets/hbd.mp3'/>
-    <audio id='a2' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg'/>
+    <audio id='a1' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a2' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a3' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a4' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a5' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a6' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a7' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a8' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a9' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a10' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a11' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a12' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a13' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a14' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a15' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a16' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a17' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a18' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a19' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a20' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a21' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='a22' src='assets/Card-flip-sound-effect.mp3'/>
 
 </body>
 <script>
+    function playsong(){
+
+    }
     function PlaySound(soundobj) {
     var thissound=document.getElementById(soundobj);
     thissound.play();
