@@ -203,7 +203,28 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
   }
   
+  .eastercard{
+    color: gold;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    text-align: center;
+    -webkit-animation: golden 3s ease-in-out infinite alternate;
+    -moz-animation: golden 3s ease-in-out infinite alternate;
+    animation: golden 3s ease-in-out infinite alternate;
+  }
  
+  @-webkit-keyframes golden {
+    from {
+      text-shadow:0 0 1px gold, 0 0 2px gold, 0 0 3px gold
+    }
+    
+    to {
+      text-shadow:0 0 2px gold, 0 0 3px gold, 0 0 5px gold
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }
   
   .inner{
       -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);

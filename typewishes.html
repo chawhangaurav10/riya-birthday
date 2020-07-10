@@ -4,7 +4,6 @@
     <title>Birthday Wishes</title>
 	<meta charset="UTF-8" />
     <meta name="description" content="Happy Birthday">
-    <!-- <meta property="og:image" content="./assets/favicon.ico" /> -->
     <link rel="icon" type="image/png" href="./assets/email.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./css/typewishes.css">
@@ -25,7 +24,7 @@
             </div>
         </div>
         <div class="row align-items-start clr justify-content-center">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-7">
                <span id="demo" class="midtxt"></span>
                <span class="midtxt" id="cursorx">|</span>
             </div>
@@ -44,14 +43,14 @@
 <script>
 // add ~ to breakline in paragraph anywhere
 
-var txt = "Dear friend, ~You know how rare it is for 'me' to be lost for words. Well honestly I am. So I thought of expressing with this little present, and try to make it the best I can! ~Gave it an hour for every year you've spent since 10/07/1998. (Ah! Numbers again. I know!). ~Thanks for being such a true and faithful friend, being there whenever needed, always supportive, and strengthening my belief in achieving what I aim for. ~~ This surprise present would really not have been possible ~ without Queenie & Roma. They added the real essence!~ These two have got your back always, by blood and by soul, ~and it makes sense as you see... 'P-Q-R' (let that sink in!)# ~~  May God bless you, stay healthy,~ stay happy, live long, and prosper. Be there, always❤️ ~~ Yours truly, ~-Myronic." ;
+var txt = "Dear friend, ~You know how rare it is for 'me' to be lost for words. Well honestly I am. So I thought of expressing with this little present, and try to make it the best I can! ~Devoted it an hour for every year you've spent since 10/07/1998. (Ah! Numbers again. I know!). ~Thanks for being such a true and faithful friend, being there whenever needed, always supportive, and strengthening my belief in achieving what I aim for. ~~ This surprise present would really not have been possible without Queenie & Roma. They added the real essence! These two have got your back always, by blood and by soul, ~and it makes sense, like the letters 'P-Q-R'does, you see. (let that sink in!)# ~~  May God bless you, stay healthy,~ stay happy, live long, and prosper. Be there, always❤️ ~~ Yours truly, ~-Myronic.~~~~" ;
 
 // button
 var clicker = document.getElementById("clicker");
 // cursor
 var cursorx = document.getElementById("cursorx");
 var blink = false;
-var speed = 100;
+var speed = 150;
 var i = 0;
 
 clicker.addEventListener("click",function(){
@@ -63,8 +62,8 @@ var intervalc = setInterval(function(){
     blink=!blink;
 }, speed*2);
 
-
 function typeWriter() {
+   
   if (i < txt.length) 
   {
     if (txt.charAt(i)=="#")

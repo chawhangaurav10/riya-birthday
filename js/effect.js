@@ -175,11 +175,11 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(100).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(100);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(2000);
 			
-			// checking for last msg(50th here) and then loading cake
-			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+			// checking for last msg and then loading cake
+			if(i==42){
+				$("p:nth-child(41)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
 				});
 				
@@ -189,7 +189,7 @@ $('document').ready(function(){
 			}			
 
 		});
-			// body...
+			
 		}
 		
 		msgLoop(0);
@@ -197,7 +197,3 @@ $('document').ready(function(){
 	});
 });
 
-
-
-
-//alert('hello');
