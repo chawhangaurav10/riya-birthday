@@ -180,8 +180,8 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeIn('slow').delay(fadeintime);
 			
 			// checking for last msg and then loading cake
-			if(i==42){
-				$("p:nth-child(41)").fadeOut('slow').promise().done(function () {
+			if(i==11){
+				$("p:nth-child(10)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
 				});
 				
