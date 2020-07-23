@@ -171,11 +171,13 @@ $('document').ready(function(){
 		});
 		
 		var i;
+		var fadeintime = 1;		//keep 2000
+		var fadeouttime = 1;	//keep 100
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(100).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(fadeouttime).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(2000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(fadeintime);
 			
 			// checking for last msg and then loading cake
 			if(i==42){
