@@ -26,13 +26,13 @@
 
     var sliderobj = document.getElementById('slider');
     var content = `<figure class="show">
-            <img src="../assets/pics/blooper/h0.jpeg"/>
+            <img src="./assets/pics/blooper/h0.jpeg"/>
         </figure>`;
 
     sliderobj.innerHTML +=content;
     for(var i=1; i<=30; i++){
         var newcard = `<figure>
-            <img src="../assets/pics/blooper/h`+i+`.jpeg" />
+            <img src="./assets/pics/blooper/h`+i+`.jpeg" />
         </figure>`;
         sliderobj.innerHTML +=newcard;
     }
