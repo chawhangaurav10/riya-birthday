@@ -99,9 +99,10 @@ h3{
 
 
 .npomsg{
-  background: #ff00cc;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0316bd, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0316bd, #D31027); 
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3600a3, #551b88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   text-align:center;
   padding:50px 80px;
   text-align: justify;
@@ -118,15 +119,15 @@ background: linear-gradient(to right, #0316bd, #D31027);
 
 .toptxt {
   color: white;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   font-size: 2.5rem;
   text-align: center;
 }
 
 .midtxt{
     color: white;
-    font-family: 'Lobster', cursive;
-    font-size: 1.3rem;
+    font-family: 'Noto Serif', serif;
+        font-size: 1.4rem;
     /* text-align: center; */
 }
 

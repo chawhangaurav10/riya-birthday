@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hoshi's journey to 22</title>
+    <title>Hoshi's A to Z</title>
 	<meta charset="UTF-8" />
     <meta name="description" content="Happy Birthday">
     <link rel="icon" type="image/png" href="./assets/cardpage.png" />
@@ -39,8 +39,9 @@
     <audio id='song' src='assets/wohDin.mp3'/>
 
 </body>
+
 <script>
-var colors = [' #ef5777', '#a55eea', '#fa8231', '#007bff', '#0be881', '#fed330'];
+var colors = [' #ef5777','#f9ca24', '#a55eea', '#fa8231', '#007bff', '#0be881'];
 
 var cardmsgs = 
 ['Tera naam hi hitanshu hai na?', 
@@ -65,17 +66,17 @@ var cardmsgs =
 'Happy Birthday! I wish that you never have to do things that you dont believe in.',
 'Pehle Gmail logout karo phir seat chodo' ,
 'Bade GSex',
-'Mera super30 sambhal lena mere jaane ke baad.',
+'-“Bhai idhar thoda scene ho gaya hai...”',
 '"Hey there soon to be Engineer (I hope soon?!). Also chill youll be an Engineer soon and youll meet C2 of your life today, tomorrow,... Soon!"',
 'Kuch na kaho, kuch bhi na kaho...'  ];
 
-var names = ['Amol', 'Gai','Sir','Hitanshhhhh','Sanket','Nishith','gogida','Extra H','aunty','Doku','Akshay','Hitarth bhai','Kaale','Motu','Bhakti','Jo teri na Jhapke','Shrey','Pablo','Shu','Gupti','Chintan','Piks', 'Panchal','Meet','Sudhanwa','ZZZ'];
+var names = ['Amol', 'Gai','Sir','Hitanshhhhh','Sanket','Nishith','gogida','Extra H','aunty','Doku','Akshay','bot','Kaale','Motu','Bhakti','Jo teri na Jhapke','Shrey','Pablo','Shu','Gupti','Chintan','Piks', 'Panchal','Meet','Sudhanwa','ZZZ'];
 
 
     var cardcontainer= document.getElementById('cardparent');
     for(var i=0; i<cardmsgs.length; i++){
         var letter = String.fromCharCode(65+i);
-        var newcard = ` <div class="col"  id="c`+i+`" ontouchstart="this.classList.toggle('hover');"">
+        var newcard = ` <div class="col"  id="c`+i+`" >
                 <div class="container">
                     <div class="front" style="background: `+colors[i%colors.length]+`">
                         <div class="inner">
@@ -92,7 +93,7 @@ var names = ['Amol', 'Gai','Sir','Hitanshhhhh','Sanket','Nishith','gogida','Extr
         cardcontainer.innerHTML += newcard;
     }
     
-    
+
 
     function PlaySound(soundobj) {
         var thissound=document.getElementById(soundobj);
