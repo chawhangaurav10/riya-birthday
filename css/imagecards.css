@@ -46,6 +46,7 @@ padding-bottom: 20px;
   color: white;
   font-family: 'Lobster', cursive;
   text-align: center;
+  font-size: x-large !important;
 }
 
 .glow {

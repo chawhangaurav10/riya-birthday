@@ -30,7 +30,7 @@
         </figure>`;
 
     sliderobj.innerHTML +=content;
-    for(var i=1; i<=11; i++){
+    for(var i=1; i<=30; i++){
         var newcard = `<figure>
             <img src="../assets/pics/blooper/h`+i+`.jpeg" />
         </figure>`;
@@ -40,7 +40,7 @@
     
     // skip cry
     var clicker = document.getElementById('clicker');
-    var timer = 10;
+    var timer = 30;
     var intervalc = setInterval(function(){    
         clicker.innerHTML = timer+' s';
         timer-=1;

@@ -31,7 +31,7 @@
           <div class="cols" id="cardparent"></div>
          <div>
         <center>
-            <a href="./typewishes.html"><button id="clicker" class="btn btn-primary" onclick="">Finally one last ></button></a>
+            <a href="./wishes.html"><button id="clicker" class="btn btn-primary" onclick="">Finally one last ></button></a>
         </center>
         </div>
     </div>
@@ -40,25 +40,49 @@
 
 </body>
 <script>
-var colors = ['#26de81', ' #ef5777', '#a55eea', '#fa8231', '#007bff', '#0be881', '#fed330', '#fc5c65'];
+var colors = [' #ef5777', '#a55eea', '#fa8231', '#007bff', '#0be881', '#fed330'];
 
-var cardmsgs = ['ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg' ,'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg'  ];
+var cardmsgs = 
+['Tera naam hi hitanshu hai na?', 
+'Ek dusre ki maarne mai bohot maza aata hai',
+'Mera LOA kab dega bhai?',
+'This will be a love hate story.',
+'"Another year older and still as sexyyyy as everrr!!P.S. - I dont  always say Happy Birthday, but when i do its only to LEGENDS!!!"',
+'It was great to work with a leader like you. You have been an amazing person throughout the year. Wish you an amazing year ahead...',
+'Tu hai. tereko pata nahi lekin tu hai',
+'I wish what your friends told you was true.',
+'Gimme your steam inventory and I wont patak earphones :)',
+'Tu story batata reh, mai banate rehta hu...','Agli baar milenge toh saath me ek photo kheech lenge',
+'Brother by DNA, father by bonding.',
+'Theres no racism in friendship XD. Enjoy your fati hui roti! wkwk lul krappa123.',
+'The guy who sleeps in the car all the time.',
+'Happpyyyy Birthdayyy Hituuu Best Brother Ever, Leh. I Love Youuu. Thanks For Always Watching My Back. You Mean So Much To Me. Ugh!',
+'iss bhains ka muh band karo koi',
+'Its been a year since I have know you and its been wonderful . I still remember you were the one who had interviewed me for U&I which was quite scary. Happy Birthday! Have fun!!!',
+'Ruk tere kapde nikalta hu!',
+'I am a "U" more than "You"',
+'Dono same hai. Chashma, gandi shakal, dadhi(meri kesari) aur single(Oops)',
+'Happy Birthday! I wish that you never have to do things that you dont believe in.',
+'Pehle Gmail logout karo phir seat chodo' ,
+'Bade GSex',
+'Mera super30 sambhal lena mere jaane ke baad.',
+'"Hey there soon to be Engineer (I hope soon?!). Also chill youll be an Engineer soon and youll meet C2 of your life today, tomorrow,... Soon!"',
+'Kuch na kaho, kuch bhi na kaho...'  ];
 
-var names = ['ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg'  ];
+var names = ['Amol', 'Gai','Sir','Hitanshhhhh','Sanket','Nishith','gogida','Extra H','aunty','Doku','Akshay','Hitarth bhai','Kaale','Motu','Bhakti','Jo teri na Jhapke','Shrey','Pablo','Shu','Gupti','Chintan','Piks', 'Panchal','Meet','Sudhanwa','ZZZ'];
 
 
     var cardcontainer= document.getElementById('cardparent');
     for(var i=0; i<cardmsgs.length; i++){
         var letter = String.fromCharCode(65+i);
-        var newcard = ` <div class="col"  id="c`+i+`" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a`+i+`')" 
-            onmouseout="StopSound('a`+i+`')">
+        var newcard = ` <div class="col"  id="c`+i+`" ontouchstart="this.classList.toggle('hover');"">
                 <div class="container">
                     <div class="front" style="background: `+colors[i%colors.length]+`">
                         <div class="inner">
                             <p class="cardtxt">`+cardmsgs[i]+`<br/><br/>~ `+names[i]+`</p>
                         </div>
                     </div>
-                    <div class="back" style="background-image: url('./assets/pics/pic-1.jpg')">
+                    <div class="back" style="background-image: url('./assets/pics/a2z/`+String.fromCharCode(97+i)+`.jpg')">
                         <div class="inner">
                             <p >`+letter+`</p>
                         </div>
