@@ -26,8 +26,10 @@ padding-bottom: 20px;
   font-family: cursive;
   font-weight: 700;
   color: #fff;
-      border-color: #ffd32a;
-      background-color: #f53b57;
+  border-color: #ffd32a;
+  background-color: #f53b57;
+  cursor:pointer;
+
 }
 
 .bar {

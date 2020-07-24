@@ -17,14 +17,14 @@
     <div class="wrapper">
         <div class="bar">
             <span class="bar_content">
-              <p class="glow" onclick="PlaySound('photograph')" > 
+              <p class="glow" onclick="PlaySound('song')" style="cursor:pointer"> 
                   <span>
                       <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-music-player-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3zm7 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <circle cx="8" cy="11" r="1"/>
                       </svg>
                      
-                  </span> <span>aaya click karjo!</span><br> in gujju: apne life ka A to Z somthin heading</p>
+                  </span> <span>aaiya click karjo!</span><br>aapdi college life A thi Z</p>
             </span>
           </div>
           
@@ -36,50 +36,31 @@
         </div>
     </div>
     <!-- all audio  -->
-    <audio id='photograph' src='assets/Ed-Sheeran-Photograph.mp3'/>
-    <audio id='a1' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a2' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a3' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a4' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a5' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a6' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a7' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a8' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a9' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a10' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a11' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a12' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a13' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a14' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a15' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a16' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a17' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a18' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a19' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a20' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a21' src='assets/Card-flip-sound-effect.mp3'/>
-    <audio id='a22' src='assets/Card-flip-sound-effect.mp3'/>
+    <audio id='song' src='assets/wohDin.mp3'/>
 
 </body>
 <script>
 var colors = ['#26de81', ' #ef5777', '#a55eea', '#fa8231', '#007bff', '#0be881', '#fed330', '#fc5c65'];
-var cardmsgs = ['ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg' ];
-var names = ['ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg' ];
+
+var cardmsgs = ['ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg' ,'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg'  ];
+
+var names = ['ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg', 'ekekkafullmsg','ekekkafullmsg','ekekkafullmsg','ekekkafullmsg'  ];
 
 
     var cardcontainer= document.getElementById('cardparent');
-    for(var i=1; i<=22; i++){
+    for(var i=0; i<cardmsgs.length; i++){
+        var letter = String.fromCharCode(65+i);
         var newcard = ` <div class="col"  id="c`+i+`" ontouchstart="this.classList.toggle('hover');" onmouseover="PlaySound('a`+i+`')" 
             onmouseout="StopSound('a`+i+`')">
                 <div class="container">
                     <div class="front" style="background: `+colors[i%colors.length]+`">
                         <div class="inner">
-                            <p class="cardtxt">`+cardmsgs[i-1]+`<br/><br/>~ `+names[i-1]+`</p>
+                            <p class="cardtxt">`+cardmsgs[i]+`<br/><br/>~ `+names[i]+`</p>
                         </div>
                     </div>
                     <div class="back" style="background-image: url('./assets/pics/pic-1.jpg')">
                         <div class="inner">
-                            <p >`+i+`</p>
+                            <p >`+letter+`</p>
                         </div>
                     </div>
                 </div>

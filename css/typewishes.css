@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Lobster&display=swap');
 
-/* .clr{
-    background-color: green;
-}
-
-.clr2{
-    background-color: orange;
-} */
-
-
 
 .bar {
   height: auto;
@@ -40,9 +31,10 @@
 }
 
   body{
-    background: #8E2DE2;  
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
-    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+    background: #D31027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EA384D, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
 
 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="./css/wishes.css">  
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body data-gr-c-s-loaded="true" class="vsc-initialized">
+    <div class="bar">
+        <p class="toptxt">Home Sweet Home</p>
+    </div>
+
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">U&I</span>
+  </div>
+</div>
+
+<div class="unimsg">
+    <h3 >weekends made wonderful</h3>
+    <br>
+  <p class="midtxt">
+    <span id="demo_uni"></span>
+    <span id="cursor_uni">|</span>
+    </p>
+    <br>
+    <div class="row align-items-end clr justify-content-center">
+        <div class="col-sm-10 col-md-6 col-lg-4">
+            <button id="clicker_uni" class="btn btn-outline-light btn-lg btn-block toptxt endtxt" onclick="typeWrapper('uni')">#olh</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bgimg-2">
+    <div class="caption">
+    <span class="border">CSI</span>
+    </div>
+  </div>
+  
+  <div class="csimsg">
+      <h3 >Fe rep -> tech team -> Gsec</h3>
+      <br>
+      <p class="midtxt">
+        <span id="demo_csi"></span>
+        <span id="cursor_csi">|</span>
+        </p>
+        <br>
+    <div class="row align-items-end clr justify-content-center">
+        <div class="col-sm-10 col-md-6 col-lg-4">
+            <button id="clicker_csi" class="btn btn-outline-light btn-lg btn-block toptxt endtxt" onclick="typeWrapper('csi')">#apnaghar311</button>
+        </div>
+    </div>
+  </div>
+  
+
+  <div class="bgimg-3">
+    <div class="caption">
+    <span class="border">NOPROBLEMO</span>
+    </div>
+  </div>
+  
+  <div class="npomsg">
+      <h3 >made engg. life memorable</h3>
+      <br>
+      <p class="midtxt">
+        <span id="demo_npo"></span>
+        <span id="cursor_npo">|</span>
+        </p>
+        <br>
+    <div class="row align-items-end clr justify-content-center">
+        <div class="col-sm-10 col-md-6 col-lg-4">
+            <button id="clicker_npo" class="btn btn-outline-light btn-lg btn-block toptxt endtxt" onclick="typeWrapper('npo')">#Extra-H</button>
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+<div class="bgimg-4">
+</div>
+
+
+<div class="ukwho">
+    <center><p class="midtxt">made by... you know who...<br> Jati reje!</p></center>
+</div>
+</body>
+
+<script>
+    // add ~ to breakline in paragraph anywhere
+    
+    var uni = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi provident harum, impedit, nam eveniet asperiores quam, porro modi dolor voluptate cum sed consequuntur obcaecati nemo totam delectus! Sapiente eum repudiandae voluptate dignissimos in alias ipsa, officia dolore quisquam repellat consequuntur hic harum reprehenderit sit accusamus explicabo non iure! Placeat, quas repellendus optio nihil dolorem neque delectus sunt error et quod id iusto eligendi autem dolor eveniet nesciunt quaerat est! Perferendis tempore esse sequi sapiente qui! Molestias, ipsum explicabo molestiae quos commodi deserunt debitis, tempore sed veniam harum reprehenderit dicta cumque. Ad, est ut. Voluptates rem est laudantium asperiores ipsum.  #olh~~-U&I"  ;
+
+
+    var csi = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi provident harum, impedit, nam eveniet asperiores quam, porro modi dolor voluptate cum sed consequuntur obcaecati nemo totam delectus! Sapiente eum repudiandae voluptate dignissimos in alias ipsa, officia dolore quisquam repellat consequuntur hic harum reprehenderit sit accusamus explicabo non iure! Placeat, quas repellendus optio nihil dolorem neque delectus sunt error et quod id iusto eligendi autem dolor eveniet nesciunt quaerat est! Perferendis tempore esse sequi sapiente qui! Molestias, ipsum explicabo molestiae quos commodi deserunt debitis, tempore sed veniam harum reprehenderit dicta cumque. Ad, est ut. Voluptates rem est laudantium asperiores ipsum.  #ApnaGhar311~~-CSI"  ;
+    
+
+    var npo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi provident harum, impedit, nam eveniet asperiores quam, porro modi dolor voluptate cum sed consequuntur obcaecati nemo totam delectus! Sapiente eum repudiandae voluptate dignissimos in alias ipsa, officia dolore quisquam repellat consequuntur hic harum reprehenderit sit accusamus explicabo non iure! Placeat, quas repellendus optio nihil dolorem neque delectus sunt error et quod id iusto eligendi autem dolor eveniet nesciunt quaerat est! Perferendis tempore esse sequi sapiente qui! Molestias, ipsum explicabo molestiae quos commodi deserunt debitis, tempore sed veniam harum reprehenderit dicta cumque. Ad, est ut. Voluptates rem est laudantium asperiores ipsum.  #Extra-H~~-NoProblemo"  ;
+    
+    
+// uni
+    var clicker_uni = document.getElementById("clicker_uni");
+    var cursor_uni = document.getElementById("cursor_uni");
+//csi
+    var clicker_csi = document.getElementById("clicker_csi");
+    var cursor_csi = document.getElementById("cursor_csi");
+//npo
+    var clicker_npo = document.getElementById("clicker_npo");
+    var cursor_npo = document.getElementById("cursor_npo");
+
+    var blink = false;
+    var speed = 10;      //keep 100
+    var i = 0;
+    var msg = '';
+    var cursor = null;
+    
+    clicker_uni.addEventListener("click",function(){
+        clicker_uni.style.display='none';
+    });
+    
+    var intervalc;
+    
+    function  typeWrapper(txt){
+        console.log(cursor);
+        if(txt=='uni'){
+            console.log(uni)
+            msg = uni;
+            demo = 'demo_uni';
+            cursor = cursor_uni;
+            i = 0;
+        }else if(txt=='csi'){
+            msg = csi;
+            demo = 'demo_csi';
+            cursor = cursor_csi;
+            i = 0;
+        }else if(txt=='npo'){
+            msg = npo;
+            demo = 'demo_npo';
+            cursor = cursor_npo;
+            i = 0;
+        }
+        console.log(cursor);
+        intervalc = setInterval(function(){
+            cursor.style.visibility = blink?"visible":"hidden";
+            blink=!blink;
+        }, speed*2);
+        typeWriter()
+    }
+
+    function typeWriter() {
+    
+            
+      if (i < msg.length) 
+      {
+        if(msg.charAt(i)=='~')
+            document.getElementById(demo).innerHTML += "<br/>";
+        else 
+            document.getElementById(demo).innerHTML +=msg.charAt(i);
+        
+        setTimeout(typeWriter, speed);
+        i++;
+      }
+      else{
+          clearInterval(intervalc);
+          cursor.style.visibility = "hidden";
+      }
+    }
+    
+    </script>
+</html>

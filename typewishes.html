@@ -43,32 +43,32 @@
 <script>
 // add ~ to breakline in paragraph anywhere
 
-var txt = "Dear friend, ~You know how rare it is for 'me' to be lost for words. Well honestly I am. So I thought of expressing with this little present, and try to make it the best I can! ~Devoted it an hour for every year you've spent since 10/07/1998. (Ah! Numbers again. I know!). ~Thanks for being such a true and faithful friend, being there whenever needed, always supportive, and strengthening my belief in achieving what I aim for. ~~ This surprise present would really not have been possible without Queenie & Roma. They added the real essence! These two have got your back always, by blood and by soul, ~and it makes sense, like the letters 'P-Q-R'does, you see. (let that sink in!)# ~~  May God bless you, stay healthy,~ stay happy, live long, and prosper. Be there, always❤️ ~~ Yours truly, ~-Myronic.~~~~" ;
+var txt = "Dear friend, ~You know how rare it is for 'me' to be lost for words. Well honestly I am. So I thought of expressing with this little present, and try to make it the best I can! ~Devoted it an hour for every year you've spent since 10/07/1998. (Ah! Numbers again. I know!).~-Myronic.~~" ;
 
 // button
 var clicker = document.getElementById("clicker");
 // cursor
 var cursorx = document.getElementById("cursorx");
 var blink = false;
-var speed = 150;
+var speed = 1;
 var i = 0;
-
+var msg = 0;
 clicker.addEventListener("click",function(){
-    clicker.style.display='none';
+    i=0;
+    document.getElementById("demo").innerHTML += "";
+    typeWriter();
 });
 
-var intervalc = setInterval(function(){
+
+    var intervalc = setInterval(function(){
     cursorx.style.visibility = blink?"visible":"hidden";
     blink=!blink;
 }, speed*2);
 
-function typeWriter() {
-   
-  if (i < txt.length) 
-  {
-    if (txt.charAt(i)=="#")
-        setTimeout(typeWriter, speed*25);
-    else{
+    function typeWriter() {
+    
+    if (i < txt.length) 
+    {
         if(txt.charAt(i)=='~'){
             document.getElementById("demo").innerHTML += "<br/>";
             }
@@ -76,14 +76,20 @@ function typeWriter() {
         document.getElementById("demo").innerHTML +=txt.charAt(i);
         } 
         setTimeout(typeWriter, speed);
+        i++;
     }
-    i++;
-  }
-  else{
-      clearInterval(intervalc);
-      cursorx.style.visibility = "hidden";
-  }
-}
+    else{
+        msg+=1;
+        if(msg==1){
+            clearInterval(intervalc);
+        
+            txt = "No problemo lorem";
+        }else if(msg > 1){
+            cursorx.style.visibility = "hidden";
+        }
+    }
+
+    }
 
 </script>
 </html>
