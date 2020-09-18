@@ -16,22 +16,22 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("../assets/pics/blooper/olh.jpg");
+  background-image: url("../assets/pics/images/olh.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("../assets/pics/blooper/csi1.jpg");
+  background-image: url("../assets/pics/images/csi1.jpg");
   min-height: 100%;
 }
 
 .bgimg-3 {
-  background-image: url("../assets/pics/blooper/npo2.jpg");
+  background-image: url("../assets/pics/images/npo2.jpg");
   min-height: 100%;
 }
 
 .bgimg-4 {
-  background-image: url("../assets/pics/blooper/nahoy.jpg");
+  background-image: url("../assets/pics/images /nahoy.jpg");
   min-height: 100%;
 }
 

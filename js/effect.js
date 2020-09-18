@@ -171,8 +171,8 @@ $('document').ready(function(){
 		});
 		
 		var i;
-		var fadeintime = 2000;		//keep 2000
-		var fadeouttime = 100;	//keep 100
+		var fadeintime = 2;		//keep 2000
+		var fadeouttime = 1;	//keep 100
 
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(fadeouttime).promise().done(function(){

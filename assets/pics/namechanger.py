@@ -2,11 +2,13 @@
 
 import os
 
-os.chdir("./pics")
+
+os.chdir('./assets/pics/a2z')
+# print(os.getcwd())
 for count, filename in enumerate(os.listdir()): 
-    count = (count+2)//2
+    count +=1
     extn = str(filename).split('.')[1]       #to extract extension of the media like .jpg/.gif/.jpeg/.png etc.
-    dst ="pic-" + str(count) +'.'+ extn
+    dst =chr(count+64) +'.jpg'
     src = os.path.join(os.getcwd(), filename) 
     dst = os.path.join(os.getcwd(), dst)
     

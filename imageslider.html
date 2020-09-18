@@ -14,7 +14,7 @@
             <a href="./imagecards.html"><button id="clicker" class="btn btn-primary" onclick=""></button></a>
         </center>
     </div>
-    <audio id='song' src='assets/tgmdd.mp3'/>
+    <audio id='song' src='assets/wohDin.mp3'/>
 </body>
 <script>
     // for song
@@ -26,13 +26,14 @@
 
     var sliderobj = document.getElementById('slider');
     var content = `<figure class="show">
-            <img src="./assets/pics/blooper/h0.jpeg"/>
+            <img src="./assets/pics/images/0.jpg"/>
         </figure>`;
 
     sliderobj.innerHTML +=content;
-    for(var i=1; i<=30; i++){
+    var picsCount = 2;     //enter the no. of pics in images folder
+    for(var i=0; i<picsCount; i++){
         var newcard = `<figure>
-            <img src="./assets/pics/blooper/h`+i+`.jpeg" />
+            <img src="./assets/pics/images/`+i+`.jpg" />
         </figure>`;
         sliderobj.innerHTML +=newcard;
     }
@@ -51,7 +52,7 @@
 
     function skipCry(){
         clearInterval(intervalc);
-        clicker.innerHTML = "SKIP CRYING >";
+        clicker.innerHTML = "SKIP SLIDER >";
     }
 </script>
 <script src="./js/slider.js"></script>
