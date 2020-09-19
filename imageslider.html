@@ -26,12 +26,12 @@
 
     var sliderobj = document.getElementById('slider');
     var content = `<figure class="show">
-            <img src="./assets/pics/images/0.jpg"/>
+            <img src="./assets/pics/images/1.jpg"/>
         </figure>`;
 
     sliderobj.innerHTML +=content;
-    var picsCount = 2;     //enter the no. of pics in images folder
-    for(var i=0; i<picsCount; i++){
+    var picsCount = 50;     //enter the no. of pics in images folder
+    for(var i=2; i<picsCount; i++){
         var newcard = `<figure>
             <img src="./assets/pics/images/`+i+`.jpg" />
         </figure>`;
@@ -41,7 +41,7 @@
     
     // skip cry
     var clicker = document.getElementById('clicker');
-    var timer = 60;
+    var timer = 120;
     var intervalc = setInterval(function(){    
         clicker.innerHTML = timer+' s';
         timer-=1;
