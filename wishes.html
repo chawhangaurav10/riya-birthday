@@ -78,20 +78,27 @@
     var i = 0;
     var msg = '';
     var cursor = null;
+    var stat = false;
     
 
     
     clicker_csi.addEventListener("click",function(){
-        clicker_csi.textContent = 'Arey itna ghai bhi kyaa hai.. Chal wapis dekh pura';
+        
+        clicker_csi.textContent = 'Arey itna ghai bhi kyaa hai..';
+        
         msg = csi;
             demo = 'demo_csi';
+            // if(!stat){document.getElementById(demo).innerHTML +=msg;}
+            // else{document.getElementById(demo).innerHTML +=msg;}
             //cursor.style.visibility = blink?"visible":"hidden";
             if(clicker_csi.addEventListener("click",function topFunction() {
+                document.getElementById(demo).innerHTML +=msg;
+                stat = true;
   document.body.scrollTop = 10; // For Safari
   document.documentElement.scrollTop = 10; // For Chrome, Firefox, IE and Opera
 }));
            
-            document.getElementById(demo).innerHTML +=msg;
+             
         
     });
 
