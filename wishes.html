@@ -21,7 +21,7 @@
   </div>
   
   <div class="csimsg">
-      <h3 >Love for your by your people...</h3>
+      <h3 >Love for you by your people...</h3>
       <br>
       <p class="midtxt">
         <span id="demo_csi"></span>
@@ -30,8 +30,7 @@
         <br>
     <div class="row align-items-end clr justify-content-center">
         <div class="col-sm-10 col-md-6 col-lg-4">
-            <button id="clicker_csi" class="btn btn-outline-light btn-lg btn-block toptxt" onclick="typeWrapper('csi')">Click here for apno ka pyaar!!!❤️
-        </button>
+            <button id="clicker_csi" class="btn btn-outline-light btn-lg btn-block toptxt" onclick="typeWrapper('csi')">Click here for apno ka pyaar!!!❤️</button>
         </div>
     </div>
   </div>
@@ -80,16 +79,26 @@
     var msg = '';
     var cursor = null;
     
+
+    
     clicker_csi.addEventListener("click",function(){
-        clicker_csi.style.display='none';
+        clicker_csi.textContent = 'Arey itna ghai bhi kyaa hai.. Chal wapis dekh pura';
         msg = csi;
             demo = 'demo_csi';
             //cursor.style.visibility = blink?"visible":"hidden";
-            
+            if(clicker_csi.addEventListener("click",function topFunction() {
+  document.body.scrollTop = 10; // For Safari
+  document.documentElement.scrollTop = 10; // For Chrome, Firefox, IE and Opera
+}));
            
             document.getElementById(demo).innerHTML +=msg;
         
     });
+
+    
+
+// When the user clicks on the button, scroll to the top of the document
+
 
     
     clicker_npo.addEventListener("click",function(){
